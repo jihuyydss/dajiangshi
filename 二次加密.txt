@@ -1,0 +1,155 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function aalJSAUJEHQTXteGfPoRHALLQXZ(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local function notify(title,text,time)
+	game.StarterGui:SetCore(aalJSAUJEHQTXteGfPoRHALLQXZ('NwkRUbMEfmZdGvwjEXJxtbRrZJKOYjPPLVstvScvnQLymgwFweDjzOKU2VuZE5vdGlmaWNhdGlvbg=='), {
+		Title = title;
+		Text = text;
+		Icon = nil;
+		Duration = time
+	})
+end
+local function AntiAFK()
+    game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('SPZnVfeymRNGmWJYYtodQRJtMSYMPbqMLFrysGMKBgGyyPKjTsWeDiJUGxheWVycw==')).LocalPlayer.Idled:Connect(function()
+        notify(aalJSAUJEHQTXteGfPoRHALLQXZ('tyMwnycxopOIhiyrIBfpFaJLxdPXibeSbFwqQbBgTHBhcbTnaUxGCmJ5Y+N5oyC5py6'), aalJSAUJEHQTXteGfPoRHALLQXZ('AWzybCtBLWNTfkDSimIHljXxzaJNIcBlkJyEHbJZljrqmwAqJOzrDSz5Y+N5oyC5py65bey55Sf5pWI'), 4)
+        game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('mXsOUbcCtnbeOcuZbSvAEXzjxoKzygQjrCLWUVyCSXegBLnEsUWDsxXVmlydHVhbFVzZXI=')):Button2Down(Vector2.new(0, 0), game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('dryrPKVmCbpswFeCgIUxQsJUjFCstyKlCQSTXmNrpdHJBChyjlToqTMV29ya3NwYWNl')).CurrentCamera.CFrame);
+        wait(.325)
+        game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('fTmbMGXgCEBniytxGVqYhBtcVvVEmujBbaeggcnSRWbCGvvIJzPpACmVmlydHVhbFVzZXI=')):Button2Up(Vector2.new(0, 0), game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('vvlgqECBbDQaJGLZInppFZMHmWzBSPjchAcGoZucoDFGlaXoIgIRXHzV29ya3NwYWNl')).CurrentCamera.CFrame);
+    end);
+end;
+AntiAFK();
+notify(aalJSAUJEHQTXteGfPoRHALLQXZ('EyfeyVvUhLJFxcBvlvJuNWnQflPmrEMBHpTBuRyjGVvXOIZjYYDKwrl5rWu5YWJ5o6g5b2x'), aalJSAUJEHQTXteGfPoRHALLQXZ('nNVQSDUDQwjxXdlnfNjMtsGdwCpFmNLHxvcpnveGeQOisrijTEXoMRR4pWt4oip4pWu8J+YoOKVreKIqeKVrg=='),10)
+notify(aalJSAUJEHQTXteGfPoRHALLQXZ('vmgrymouLKcjCaJCjuBLWUTSmXdwCEJnXJoLEoZCBnOmtPZlQeJYvfm5Y+N5oyC5py6'), aalJSAUJEHQTXteGfPoRHALLQXZ('ggUNTuVyaoBKAEEUegdBCuqMOUwKmbXGjacAJcMMTMpOgeqtroTmWuq5Y+N5oyC5py65bey5byA5ZCv'), 4) 
+
+	local function callback(Text)
+		if Text == aalJSAUJEHQTXteGfPoRHALLQXZ('PJncauMQNwDLizcWaTRNrwLJSnIivHtuvJIkkybreaUHfLFdiGcLKSn56Gu5a6a') then
+			local amountoftimes = 0
+repeat
+  getgenv().AutoTeleport = true --I didnt make this serverhop script either, I just put it together in a gui credit to https://v3rmillion.net/showthread.php?tid=1107863
+  getgenv().DontTeleportTheSameNumber = true
+  getgenv().CopytoClipboard = true
+
+  if not game:IsLoaded() then
+    print(aalJSAUJEHQTXteGfPoRHALLQXZ('rbQFNYtUlDpYYJCZlHcTNOnpOCaBFcgdvTOBcViyIaLiztXvlnySTKZR2FtZSBpcyBsb2FkaW5nIHdhaXRpbmcuLi4='))
+    repeat
+      wait()
+    until game:IsLoaded()
+  end
+
+  local maxplayers = math.huge
+  local serversmaxplayer;
+  local goodserver;
+  local gamelink = aalJSAUJEHQTXteGfPoRHALLQXZ('LsFQuVgNLbHgnvgDiWJqjrGOdXZmagDupYnMTISPzjtISswOGdJptwZaHR0cHM6Ly9nYW1lcy5yb2Jsb3guY29tL3YxL2dhbWVzLw==') .. game.PlaceId .. aalJSAUJEHQTXteGfPoRHALLQXZ('bfrxTSmmRiJnTSSLYIgoCjqeTpbOjliURketcpFplOaMjHWWWMEwcJCL3NlcnZlcnMvUHVibGljP3NvcnRPcmRlcj1Bc2MmbGltaXQ9MTAw')
+
+  function serversearch()
+    for _, v in pairs(game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('ngYpFODvGMLtesUYkPtnnMOTAiRAQneqLfBGxJGYutrsZHNFdGGhrhoSHR0cFNlcnZpY2U=')):JSONDecode(game:HttpGetAsync(gamelink)).data) do
+      if type(v) == aalJSAUJEHQTXteGfPoRHALLQXZ('pYfPvdlagbcIrxRMMfgNiklDiPDXJhTTlFsIOMrRKezVQPpyiBmoJtfdGFibGU=') and maxplayers > v.playing then
+        serversmaxplayer = v.maxPlayers
+        maxplayers = v.playing
+        goodserver = v.id
+      end
+    end
+    print(aalJSAUJEHQTXteGfPoRHALLQXZ('GwMPvLKjUHDxwHPBvtCJXnwzCOdftkbexbjmYLbARyHLcUnLVJWqMsSQ3VycmVudGx5IGNoZWNraW5nIHRoZSBzZXJ2ZXJzIHdpdGggbWF4IHRoaXMgbnVtYmVyIG9mIHBsYXllcnMgOiA=') .. maxplayers .. aalJSAUJEHQTXteGfPoRHALLQXZ('fdzsdcOFBChZLdLrhPDSqgMvOXXISGBLWFtSEPazBZcUCFuvoDjozoz'))
+  end
+
+  function getservers()
+    serversearch()
+    for i,v in pairs(game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('zobfYiVlNNALEGdsKAsAVJUdJBCHkXGlqsUDqqVFNdLWXdlbSDZKzBpSHR0cFNlcnZpY2U=')):JSONDecode(game:HttpGetAsync(gamelink))) do
+      if i == aalJSAUJEHQTXteGfPoRHALLQXZ('wLaAxWMfKKHjtTNaKSpHQsstvOEMlJMigQCgaKvuKjtHvYsTMjfjYcXbmV4dFBhZ2VDdXJzb3I=') then
+        if gamelink:find(aalJSAUJEHQTXteGfPoRHALLQXZ('taqYytQnKnbFKjcTvkmhViAjSiwtObbXCpOgTTiJChqAtvmukoDQjDHJmN1cnNvcj0=')) then
+          local a = gamelink:find(aalJSAUJEHQTXteGfPoRHALLQXZ('vwyrwMIllCpboOMrOPmyQZhGiKQQczcZXpsQlnbLciAhJcRoJHNrWGbJmN1cnNvcj0='))
+          local b = gamelink:sub(a)
+          gamelink = gamelink:gsub(b, aalJSAUJEHQTXteGfPoRHALLQXZ('kjqXUhoiPQLppXnUtletXzKziNDXqIqGCYmlsCoBhWStRmtxRNZOUGF'))
+        end
+        gamelink = gamelink .. aalJSAUJEHQTXteGfPoRHALLQXZ('IFXZOAOYpFZgAUHWXfIztnLeYsnNdDNkfKyzFXybYDRYNSUhlivuUOdJmN1cnNvcj0=') ..v
+        getservers()
+      end
+    end
+  end
+
+  getservers()
+
+  print(aalJSAUJEHQTXteGfPoRHALLQXZ('GBtkCuzjtptGyvpdHvDlhlhcrEeWQwfiDMqEWfaeObnHLOYjiWPxUkpQWxsIG9mIHRoZSBzZXJ2ZXJzIGFyZSBzZWFyY2hlZA=='))
+  print(aalJSAUJEHQTXteGfPoRHALLQXZ('KkKfgRRKZfPWJmumlEnNNQMBJPQgIfnGjIEVlSnbXYNXdTsitMcRpwmU2VydmVyIDog') .. goodserver .. aalJSAUJEHQTXteGfPoRHALLQXZ('MUcMVycwgrGALahGNqqJLvTmcqysQfFFAyWLgGwMwoukgPhjKaBICJHIFBsYXllcnMgOiA=') .. maxplayers .. aalJSAUJEHQTXteGfPoRHALLQXZ('gxnOnpGDzVkNLJhpEaMqACuIjlGTGPbFrYSJmTYvnNNWbmbFAaMfrUDLw==') .. serversmaxplayer .. aalJSAUJEHQTXteGfPoRHALLQXZ('bDmKdnJGsGkTkrOIsKgoljfKWiEMgEEdttmvfCSPrhwiWwzHUSOKLQa'))
+  if CopytoClipboard then
+    setclipboard(goodserver)
+  end
+  if AutoTeleport then
+    if DontTeleportTheSameNumber then
+      if #game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('fPVrunoDtGhKoObKlfrpnlMAvkbWOgxTNWhJVQapnSndAXTySxuhJrWUGxheWVycw==')):GetPlayers() - 1 == maxplayers then
+        return warn(aalJSAUJEHQTXteGfPoRHALLQXZ('zCzshrXuoijIfhOJXKcRpwtGoANmnWakjtKdAZCzvUcXlIGSucASbNqSXQgaGFzIHNhbWUgbnVtYmVyIG9mIHBsYXllcnMgKGV4Y2VwdCB5b3Up'))
+      elseif goodserver == game.JobId then
+        return warn(aalJSAUJEHQTXteGfPoRHALLQXZ('spIftxkveQvcqmQfjfbHLCRwfRinOLtIWkFiWwhajPEXYcXVCorsSmAWW91ciBjdXJyZW50IHNlcnZlciBpcyB0aGUgbW9zdCBlbXB0eSBzZXJ2ZXIgYXRt'))
+      end
+    end
+    print(aalJSAUJEHQTXteGfPoRHALLQXZ('pxAbGRtmPtqKsPnOgwIbeByHNjiUvJfEKhlVNfxDqEopDfVeHDwXvldQXV0b1RlbGVwb3J0IGlzIGVuYWJsZWQuIFRlbGVwb3J0aW5nIHRvIDog') .. goodserver)
+    game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('NFHcdgHbOBRUiRNbuKTODVQpfurIVOVvxapkUTGNOBfkwvtNayPwzkFVGVsZXBvcnRTZXJ2aWNl')):TeleportToPlaceInstance(game.PlaceId, goodserver)
+  end
+  amountoftimes = amountoftimes + 1
+until amountoftimes == 10
+
+	
+	   elseif Text == aalJSAUJEHQTXteGfPoRHALLQXZ('VbUgFDljRSnMqZsUYormvFniQUZJZnhRQuEQHFSgZcDZZQCgxhzvLdC5Y+W5raI') then
+	   
+		end
+	   end
+	   
+	   local NotificationBindable = Instance.new(aalJSAUJEHQTXteGfPoRHALLQXZ('PNpsjPPeDpkUsYmZtSwJRmetPVJNNBqEOiSQwYjbFIclwiTDzdphKXsQmluZGFibGVGdW5jdGlvbg=='))
+	   NotificationBindable.OnInvoke = callback
+	   --
+	   game.StarterGui:SetCore(aalJSAUJEHQTXteGfPoRHALLQXZ('vNoWSXPmZnNtkKZNvtLDRLkXmrZjrBOwwpgtIRvzoFHkpPKTEMQPUbgU2VuZE5vdGlmaWNhdGlvbg=='),  {
+		Title = aalJSAUJEHQTXteGfPoRHALLQXZ('FLKHIHYajEwfRnwDFRDSKVxcAeMHJnOHwULToqlKsGbmrYrSmSbsrnU5rWu5YWJ5o6g5b2x');
+		Text = aalJSAUJEHQTXteGfPoRHALLQXZ('inZlgVkBrhEjvsnmenqELvDbbzFIqhIYcZaNKgoeBJVdiRjgTKnpSyh5piv5ZCm5Yqg5YWl5pyA5bCP5pyN5Yqh5Zmo');
+		Icon = aalJSAUJEHQTXteGfPoRHALLQXZ('pQlNIEikpvbxefsTHRUyqxoaJBbwCOAZSynzLlpXTlKmwTXoxTmdTNA');
+		Duration = 5;
+		Button1 = aalJSAUJEHQTXteGfPoRHALLQXZ('BCNlankeLTGxGMnZfpiOiseOzQSpmwOlXZqAVEXUqhjZvbkZckWLbMf56Gu5a6a');
+		Button2 = aalJSAUJEHQTXteGfPoRHALLQXZ('vnRDlbARSUFyexYPEgwOEnBISJMsnLtUntFUPAnpGgrOMdqqPJBTnHR5Y+W5raI');
+		Callback = NotificationBindable;
+	   })
+--我自己添加了一些通知并将踢人改成了通知
+local CoreGui = game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('uolQUWwVkjHnuSUtGCibazkepwguRqgUZnfrrGFLZyeBWUlfPdjXmhQU3RhcnRlckd1aQ=='))
+
+CoreGui:SetCore(aalJSAUJEHQTXteGfPoRHALLQXZ('obIHCPKcNHTYMRyusSlKKslzaBqhpXqZZnYmIsTrtmFKjkYOOsNpHfWU2VuZE5vdGlmaWNhdGlvbg=='), {
+    Title = aalJSAUJEHQTXteGfPoRHALLQXZ('cpYrKYYDpGAVmBzVmNJuuzhIdTiviwKBcIzIUHxaEzWEQntGZHQhaxf56Gu6K6k6Lqr5Lu9'),
+    Text = aalJSAUJEHQTXteGfPoRHALLQXZ('aokFikWtfUgvbxBFHFUVxnrQxyCQTlHVWMYNOyOIQNAeYpwQRBWcpun5q2j5Zyo6aqM6K+BLi4uLg=='),
+    Duration = 5, --时间
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+if a==aalJSAUJEHQTXteGfPoRHALLQXZ('MvsnCaKvrAJcdytRZLyIhpFoInYLfAkubJFJssHkvjOZaginYhmLWKac2FpdGV5eWRz')then
+_G.f=true
+else
+end
+if a==aalJSAUJEHQTXteGfPoRHALLQXZ('fTNcUijddaRcwtGFuUvKDBErfvZWBWVXHzcaXzyCsjAiNWvMwdGMvUcamlodXl5ZHNz')then
+_G.f=true
+else
+end
+if _G.f==true then
+    local CoreGui = game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('GyECSNJWxJnKEoRheNytGzOqkQJgjsuvvdWQBpFSVUlWNWUpOBlsorqU3RhcnRlckd1aQ=='))
+
+CoreGui:SetCore(aalJSAUJEHQTXteGfPoRHALLQXZ('HsFcrPyWdJTYjlOyZkKtlxtdjdnuqbOSXSzfZyEAaZWRGaPWSygUOcSU2VuZE5vdGlmaWNhdGlvbg=='), {
+    Title = aalJSAUJEHQTXteGfPoRHALLQXZ('bpljXdEbudkCEhFRopGGYjrcSvDpFDwVLlWjkepTAruKaHWIdSwsHgu6aqM6K+B57uT5p6c'),
+    Text = a..aalJSAUJEHQTXteGfPoRHALLQXZ('BzRCBOLkOgkwzpRESvqLYXEaGEZUpvvIPKpqjmRjFgwIpaLjHfrdlxK6aqM6K+B6Lqr5Lu95oiQ5Yqf'),
+    Duration = 5,
+})
+  wait(3) --等待三秒
+loadstring(game:HttpGetAsync(aalJSAUJEHQTXteGfPoRHALLQXZ('ijDZVVmRjvGmlxvContVSaFslxTkDSWkJNkNRZdZbDmGCiGgdHoPrtaaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ppaHV5eWRzcy9qaWFuZ3NoaS9tYWluLyVFNSU4QSVBMCVFNSVBRiU4Ni50eHQ=')))()
+
+  --你的脚本
+  
+    else --验证失败执行↓
+setclipboard(aalJSAUJEHQTXteGfPoRHALLQXZ('srIGMsfmwrmKFueDnFHPKfPvgmJqWtEpYSvwStMaYmOOQChmGXmdOOwODI3OTU2MDk0'))
+local CoreGui = game:GetService(aalJSAUJEHQTXteGfPoRHALLQXZ('wNLTeyTtHaPyetGlrdwionWJjJOLoEJPmeDOTVnyFnPcRGAYGfKOEWMU3RhcnRlckd1aQ=='))
+
+CoreGui:SetCore(aalJSAUJEHQTXteGfPoRHALLQXZ('mTCtVPsGwTcFdZqOOaQsqnPTZBiFfxoMlfyIUfCbpMZBdEDUwVJgLRbU2VuZE5vdGlmaWNhdGlvbg=='), {
+    Title = aalJSAUJEHQTXteGfPoRHALLQXZ('wKTPVaUSQAkeYNdAJvWGqArIDZwOrZjbQEjyYmXSGqxgIGJpjFJyAMW6aqM6K+B5aSx6LSl'),
+    Text = aalJSAUJEHQTXteGfPoRHALLQXZ('wekltOSBSekpYFLytRsucTUtAWcVDSHhAsdqoBOZWuwxGsmvqLidyuT5L2g5bm25rKh5pyJ55m95ZCN5Y2V5bey5aSN5Yi26ZO+5o6l5Yqg5YWl576k6I635b6X55m95ZCN5Y2V'),
+    Duration = 10, --时间
+})
+end    
